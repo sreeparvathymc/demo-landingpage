@@ -1,0 +1,106 @@
+.foot-video {
+    height: 400px; overflow: hidden;
+}
+
+.foot-video video {
+    height: 100%;
+    width: 100%;
+     object-fit: cover;
+  display: block;
+  border-radius: 20px 20px 0 0 ;
+
+}
+
+.footer-session{padding-inline: 20px; overflow: hidden; color: #ffffff;
+}
+
+
+.footer-links {display: flex;flex-wrap: wrap;justify-content: space-between;}
+
+.footer-col {
+    width: 25%;
+    padding-right: 20px;
+}
+
+.footer-col:last-child {
+    padding-right: 0;
+}
+
+.footer-col.col4 {
+    width: auto;
+}
+
+.copy-text p {
+    font-size: 16px;
+      font-family: "Outfit";
+       color: #ffffff; text-align: right; opacity: 0.7;
+
+}
+.footer-container{position: relative;}
+
+.footer-items {
+    position: absolute;
+    z-index: 99;
+    right: 0;
+    left: 0;
+    top: 60px;
+    padding-inline: 80px;
+}
+
+.footer-col h4{
+    font-size: 22px;
+      font-family: "Outfit";
+      margin: 0 0 30px;
+
+}
+.footer-col ul li a{
+    font-size: 18px;
+          font-family: "Outfit"; opacity: 0.7;
+
+}
+.footer-col ul li a:hover{
+    opacity: 1;
+}
+.footer-col.col4 li a img {
+    width: 35px;
+    height: 35px;
+}
+
+.footer-col.col4 ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.footer-col li {margin: 0 0 10px; line-height: 1;}
+.footer-col li:last-child {margin: 0 0 0px;}
+
+.footer-col.col4 li {margin: 0 0 0;}
+
+
+.footer-col.col4 li a{opacity: 1;}
+
+.footer-col.col4 li a img{transition: all 0.5s ease-in-out;}
+
+.footer-col.col4 li a:hover img {
+    transform: rotate(360deg);
+}
+
+
+.footer-col.col3 li a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+
+.footer-col.col3 li a span img {
+    width: 18px;
+}
+
+
+
+.footer-col.col3 ul li img {
+    width: 22px;
+    min-width: 22px;
+}

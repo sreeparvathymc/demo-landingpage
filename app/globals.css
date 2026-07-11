@@ -3,6 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-orange: #E88F00;
+  --color-grey: #929292;
+  --color-black: #2B2B2B;
 }
 
 @theme inline {
@@ -19,8 +22,92 @@
   }
 }
 
+
+@font-face {
+  font-family: "Outfit-light";
+  src:
+    url("./Fonts/Outfit-Light.woff2") format("woff2"),
+    url("./Fonts/Outfit-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src:
+    url("./Fonts/Outfit-Regular.woff2") format("woff2"),
+    url("./Fonts/Outfit-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit-medium";
+  src:
+    url("./Fonts/Outfit-Medium.woff2") format("woff2"),
+    url("./Fonts/Outfit-Medium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "PTserif";
+  src:
+    url("./Fonts/PTSerif-Regular.woff2") format("woff2"),
+    url("./Fonts/PTSerif-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: #ffffff;
+  color: #000000;
   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.containers{
+max-width: 1300px;
+margin-inline: auto;
+}
+
+.session h5{
+color: #E7B101;
+font-size: 14px;
+  font-family: "Outfit";
+  line-height: 1; margin: 0 0 10px; position: relative; padding-left: 10px;
+}
+
+.session h5::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  background: #E7B101;
+  border-radius: 50%;
+}
+
+.session h2{
+color: var(--color-black);
+font-size: 60px;
+  font-family: "Outfit";
+  line-height: 1;
+  margin: 0 0 28px;
+}
+a,
+button{transition: all 0.5s ease-in-out;}
+
+p{
+    font-family: "PTserif";
+    color: #000000;
+    font-size: 18px;
 }

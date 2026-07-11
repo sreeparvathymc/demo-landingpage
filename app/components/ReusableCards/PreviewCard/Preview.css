@@ -1,0 +1,83 @@
+
+.prevcard-outer {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #E0E0E0;
+    border-radius: 30px;
+    padding: 60px 50px;
+    background: #ffffff;
+    margin-bottom: 60px;
+
+}
+.prevcard-outer:last-child{margin-bottom: 0;}
+.card-wrapper{
+   position: sticky;
+
+}
+
+
+
+.card-wrapper:nth-child(1){
+    top: 100px;
+
+}
+.card-wrapper:nth-child(2){
+    top: 218px;
+
+}
+.card-wrapper:nth-child(3){
+    top: 336px;
+
+}
+.card-wrapper:nth-child(4){
+    top: 454px;
+
+}
+
+
+
+/* .prevcard-outer:nth-child(1){transform: translateY(10px);}
+
+.prevcard-outer:nth-child(2){margin-top: 0px;transform: translateY(140px);}
+
+.prevcard-outer:nth-child(3){margin-top: 0px;transform: translateY(270px);}
+
+.prevcard-outer:nth-child(4){margin-top: 0px;transform: translateY(-50px);}
+
+ */
+
+
+/* .wrapper{overflow: hidden; margin-top: 60px;} */
+
+
+
+.prevcol1 {
+    width: 377px;
+}
+
+.prevcol2 {
+    width: calc(100% - 377px);
+    padding-left: 50px;
+}
+
+.prevcol2 img {
+    width: 100%;
+    display: block;
+}
+
+.prevcol1 p {
+    font-style: italic;
+}
+
+
+.prevcol1 h3 {
+    font-size: 30px;
+    line-height: 1;
+    margin: 0 0 20px;
+      font-family: "Outfit";
+}
+
+
+.platform-card-session {
+    margin-top: 80px;
+}

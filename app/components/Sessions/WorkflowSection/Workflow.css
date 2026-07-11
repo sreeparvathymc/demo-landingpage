@@ -1,0 +1,29 @@
+
+
+.workflow-session{
+  position: relative; background: #F7F7F7; padding-bottom: 100px;
+}
+
+.workflow-session::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 500px;
+  height: 500px;
+  background: url("/images/who_it_is_for_gradient.png") no-repeat center;
+  background-position: top;
+  background-size: cover;
+
+  z-index: 99;
+  pointer-events: none;
+}
+
+
+.intro{
+  text-align: center;
+      margin-bottom: 130px;
+}
+
+.intro h2 span{display: block;}

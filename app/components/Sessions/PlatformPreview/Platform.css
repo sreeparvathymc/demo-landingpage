@@ -1,0 +1,20 @@
+
+.preview-section h2 span{
+  display: block;
+}
+
+.preview-section {
+    padding: 130px 0;
+}
+
+.preview-div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.preview-col2 p span {
+    display: block;
+}
