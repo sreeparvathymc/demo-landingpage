@@ -1,7 +1,36 @@
-"use client"
+"use client";
+
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import "./RotatingDiv.css";
+
+const items = [
+  {
+    icon: "/icons/icon4.svg",
+    title1: "Immigration",
+    title2: "Law Firms",
+  },
+  {
+    icon: "/icons/icon1.svg",
+    title1: "Compliance &",
+    title2: "Mobility Teams",
+  },
+  {
+    icon: "/icons/icon4.svg",
+    title1: "Financial",
+    title2: "Institutions",
+  },
+  {
+    icon: "/icons/icon2.svg",
+    title1: "HR & Recruitment",
+    title2: "Firms",
+  },
+  {
+    icon: "/icons/icon3.svg",
+    title1: "Universities & Training",
+    title2: "Institutes",
+  },
+];
 
 const RotatingDiv = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -17,7 +46,7 @@ const RotatingDiv = () => {
         setIsInView(entry.isIntersecting);
       },
       {
-        threshold: 0.15, // Trigger when 15% of the element is in view
+        threshold: 0.15,
       }
     );
 
@@ -32,13 +61,16 @@ const RotatingDiv = () => {
     if (!isInView) return;
 
     const interval = setInterval(() => {
-      setAngle((prev) => prev + 40); // 5 elements = 360 / 5 = 72 degrees step clockwise
-    }, 2000);
+      setAngle((prev) => prev + 72); // Rotate in 72-degree steps (360 / 5 elements)
+    }, 3000); // 3 seconds per transition for a premium feel
 
     return () => {
       clearInterval(interval);
     };
   }, [isInView]);
+
+  // Calculate the active index currently at the top of the wheel (0 degrees)
+  const activeIndex = Math.round((5 - (angle / 72) % 5) % 5);
 
   return (
     <div
@@ -46,92 +78,38 @@ const RotatingDiv = () => {
       className="rot-outer"
       style={{ "--rot-angle": `${angle}deg` } as React.CSSProperties}
     >
+      {/* Rotating Orbit and Items Container */}
       <div className="rotator">
+        {items.map((item, index) => {
+          const itemAngle = index * 72;
+          const isActive = index === activeIndex;
 
-
-        <div className="rot-row row22">
-          <div className="rot-rowin">
-            <div className="icon-rotateer">
-              <Image src="/icons/icon4.svg" alt="img" width={35} height={35} />
+          return (
+            <div
+              key={index}
+              className={`rot-row row-${index}`}
+              style={{ "--item-angle": `${itemAngle}deg` } as React.CSSProperties}
+            >
+              <div className={`rot-rowin ${isActive ? "active" : ""}`}>
+                <div className="icon-rotateer">
+                  <Image src={item.icon} alt={item.title1} width={24} height={24} />
+                </div>
+                <h6>
+                  {item.title1}
+                  <span>{item.title2}</span>
+                </h6>
+              </div>
             </div>
-            <h6>
-              Immigration
-              <span>Law Firms</span>
-            </h6>
-          </div>
-
-
-
-
-        </div>
-
-        <div className="rot-row row33">
-          <div className="rot-rowin">
-            <div className="icon-rotateer">
-              <Image src="/icons/icon1.svg" alt="img" width={35} height={35} />
-            </div>
-            <h6>
-              Compliance &<span>Mobility Teams</span>
-            </h6>
-          </div>
-
-
-        </div>
-
-        <div className="rot-row row44">
-          <div className="rot-rowin">
-            <div className="icon-rotateer">
-              <Image src="/icons/icon4.svg" alt="img" width={35} height={35} />
-            </div>
-            <h6>
-              Financial
-              <span>Institutions</span>
-            </h6>
-          </div>
-
-
-        </div>
-
-        <div className="rot-row row55">
-          <div className="rot-rowin">
-            <div className="icon-rotateer">
-              <Image src="/icons/icon2.svg" alt="img" width={35} height={35} />
-            </div>
-
-            <h6>
-              HR & Recruitment
-              <span>Firms</span>
-            </h6>
-
-          </div>
-
-
-        </div>
-        <div className="rot-row row66">
-          <div className="rot-rowin">
-            <div className="icon-rotateer">
-              <Image src="/icons/icon3.svg" alt="img" width={35} height={35} />
-            </div>
-
-            <h6>
-              Universities & Training
-              <span>Institutes</span>
-            </h6>
-
-          </div>
-
-
-        </div>
-
-
-
+          );
+        })}
       </div>
 
+      {/* Decorative Center concentric rings and brand logo */}
       <div className="rot-div33">
         <div className="rot-div22">
           <div className="rot-div11">
             <div className="logo-22">
-              <Image src="/icons/logo.png" alt="Arrow" width={35} height={35} />
+              <Image src="/icons/logo.png" alt="Brand Logo" width={32} height={32} />
             </div>
           </div>
         </div>
