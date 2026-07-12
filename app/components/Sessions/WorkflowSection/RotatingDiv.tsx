@@ -104,14 +104,16 @@ const RotatingDiv = () => {
         })}
       </div>
 
-      {/* Decorative Center concentric rings and brand logo */}
-      <div className="rot-div33">
-        <div className="rot-div22">
-          <div className="rot-div11">
-            <div className="logo-22">
-              <Image src="/icons/logo.png" alt="Brand Logo" width={32} height={32} />
-            </div>
-          </div>
+      {/* Central Concentric Squircles (Orbits) */}
+      <div className="center-orbit orbit-4"></div>
+      <div className="center-orbit orbit-3"></div>
+      <div className="center-orbit orbit-2"></div>
+      <div className="center-orbit orbit-1"></div>
+
+      {/* Center Logo */}
+      <div className="logo-container">
+        <div className="logo-box">
+          <Image src="/icons/logo.png" alt="Brand Logo" width={30} height={30} />
         </div>
       </div>
     </div>

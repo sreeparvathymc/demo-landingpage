@@ -1,10 +1,9 @@
-
 .rot-outer {
     margin-inline: auto;
     max-width: 480px;
     aspect-ratio: 1 / 1;
     position: relative;
-    --orbit-radius: 180px;
+    --orbit-radius: 190px;
 }
 
 .rotator {
@@ -19,21 +18,6 @@
     pointer-events: none;
 }
 
-/* Background orbit line */
-.rotator::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: calc(2 * var(--orbit-radius));
-    height: calc(2 * var(--orbit-radius));
-    border: 1.5px dashed rgba(231, 177, 1, 0.15);
-    border-radius: 50%;
-    z-index: -1;
-    pointer-events: none;
-}
-
 /* Position items on the circular orbit */
 .rot-row {
     position: absolute;
@@ -43,24 +27,22 @@
     pointer-events: auto;
 }
 
-/* Styling for the cards */
+/* Styling for the cards (matching mockup: white background, fully rounded pill, thin border, soft shadow) */
 .rot-rowin {
-    background: rgba(251, 251, 251, 0.9);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    background: #ffffff;
     width: max-content;
-    padding: 10px 18px;
+    padding: 10px 22px 10px 18px;
     display: flex;
     align-items: center;
-    border-radius: 30px;
-    border: 1.5px solid rgba(255, 255, 255, 0.7);
+    border-radius: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.01);
-    transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1),
-                background-color 0.4s,
-                border-color 0.4s,
-                box-shadow 0.4s,
+    transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1), 
+                background-color 0.4s, 
+                border-color 0.4s, 
+                box-shadow 0.4s, 
                 opacity 0.4s;
-    opacity: 0.65;
+    opacity: 0.8;
 }
 
 /* Base counter-rotation for cards to stay upright relative to screen */
@@ -71,54 +53,49 @@
 /* Active Highlight Card State */
 .rot-row .rot-rowin.active {
     opacity: 1;
-    transform: rotate(calc(-1 * var(--rot-angle, 0deg))) scale(1.08);
-    background: #ffffff;
+    transform: rotate(calc(-1 * var(--rot-angle, 0deg))) scale(1.06);
     border-color: #E7B101;
-    box-shadow: 0 12px 30px rgba(231, 177, 1, 0.16), 0 4px 10px rgba(231, 177, 1, 0.06);
+    box-shadow: 0 8px 24px rgba(231, 177, 1, 0.15), 0 2px 6px rgba(231, 177, 1, 0.05);
 }
 
-/* Icon Container */
+/* Icon Container (matching mockup: raw SVG icon without border/background) */
 .icon-rotateer {
-    width: 36px;
-    height: 36px;
+    width: 28px;
+    height: 28px;
     flex-shrink: 0;
-    border-radius: 50%;
-    background: #FFF7EB;
-    border: 1px solid rgba(231, 177, 1, 0.25);
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.4s, border-color 0.4s;
+    margin-right: 12px;
 }
 
-.rot-rowin.active .icon-rotateer {
-    border-color: #E7B101;
-    background: #FFE5BC;
+.icon-rotateer img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain;
 }
 
 /* Card Typography */
 .rot-row h6 {
-    padding-left: 10px;
     font-family: "Outfit", sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
     line-height: 1.25;
-    color: #2B2B2B;
+    color: #4A4A4A;
     margin: 0;
     text-align: left;
 }
 
 .rot-row h6 span {
     display: block;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
-    color: #929292;
+    color: #888888;
     margin-top: 1px;
-    transition: color 0.4s;
 }
 
 .rot-rowin.active h6 {
-    color: #000000;
+    color: #222222;
 }
 
 .rot-rowin.active h6 span {
@@ -126,79 +103,81 @@
     font-weight: 500;
 }
 
-/* Concentric Rings Styling (Center decoration) */
-.rot-div33 {
+/* Central Concentric Squircles (Orbits) styling */
+.center-orbit {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 250px;
-    height: 250px;
-    border: 1px dashed rgba(231, 177, 1, 0.2);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: 1.5px solid #ffffff;
+    border-radius: 35%; /* Squircle shape */
+    pointer-events: none;
     z-index: 1;
+    box-sizing: border-box;
 }
 
-.rot-div22 {
-    width: 190px;
-    height: 190px;
-    border: 1px solid rgba(0, 0, 0, 0.03);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+.orbit-4 {
+    width: 380px;
+    height: 380px;
+    border-radius: 100px;
+    border-color: rgba(255, 255, 255, 0.45);
 }
 
-.rot-div11 {
-    width: 130px;
-    height: 130px;
-    border: 1.5px solid rgba(231, 177, 1, 0.1);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.orbit-3 {
+    width: 290px;
+    height: 290px;
+    border-radius: 76px;
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+.orbit-2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 54px;
+    border-color: rgba(255, 255, 255, 0.95);
+    background: radial-gradient(circle, rgba(231, 177, 1, 0.22) 0%, rgba(231, 177, 1, 0.04) 60%, rgba(255, 255, 255, 0) 100%);
+}
+
+.orbit-1 {
+    width: 120px;
+    height: 120px;
+    border-radius: 34px;
+    border-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Center Logo Container */
+.logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.logo-box {
+    width: 68px;
+    height: 68px;
     background: #ffffff;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.02);
-}
-
-.logo-22 {
-    width: 76px;
-    height: 76px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #FFF7EB 0%, #FBE5C2 100%);
-    border: 2px solid #E7B101;
+    border: 2px solid rgba(231, 177, 1, 0.4);
+    border-radius: 20px; /* Squircle logo box */
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 8px 20px rgba(231, 177, 1, 0.18);
+    box-shadow: 0 8px 24px rgba(231, 177, 1, 0.12), inset 0 2px 4px rgba(255, 255, 255, 0.9);
     animation: pulseLogo 3s infinite ease-in-out;
 }
 
 @keyframes pulseLogo {
     0%, 100% {
         transform: scale(1);
-        box-shadow: 0 8px 20px rgba(231, 177, 1, 0.18);
+        box-shadow: 0 8px 24px rgba(231, 177, 1, 0.12);
     }
     50% {
-        transform: scale(1.04);
-        box-shadow: 0 12px 28px rgba(231, 177, 1, 0.28);
+        transform: scale(1.05);
+        box-shadow: 0 12px 28px rgba(231, 177, 1, 0.24);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* Mobile Responsiveness */
 @media (max-width: 767px) {
@@ -206,53 +185,57 @@
         --orbit-radius: 105px;
         max-width: 320px;
     }
-
-    .rot-div33 {
-        width: 140px;
-        height: 140px;
+    
+    .orbit-4 {
+        width: 220px;
+        height: 220px;
+        border-radius: 60px;
     }
-
-    .rot-div22 {
-        width: 110px;
-        height: 110px;
+    
+    .orbit-3 {
+        width: 170px;
+        height: 170px;
+        border-radius: 46px;
     }
-
-    .rot-div11 {
-        width: 80px;
-        height: 80px;
+    
+    .orbit-2 {
+        width: 120px;
+        height: 120px;
+        border-radius: 32px;
     }
-
-    .logo-22 {
-        width: 48px;
-        height: 48px;
-        border-width: 1.5px;
+    
+    .orbit-1 {
+        width: 76px;
+        height: 76px;
+        border-radius: 22px;
     }
-
-    .logo-22 img {
+    
+    .logo-box {
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+    }
+    
+    .logo-box img {
         width: 20px !important;
         height: 20px !important;
     }
-
+    
     .rot-rowin {
-        padding: 6px 12px;
-        border-radius: 20px;
+        padding: 6px 14px;
+        border-radius: 100px;
     }
-
+    
     .icon-rotateer {
-        width: 24px;
-        height: 24px;
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
     }
-
-    .icon-rotateer img {
-        width: 14px !important;
-        height: 14px !important;
-    }
-
+    
     .rot-row h6 {
         font-size: 11px;
-        padding-left: 6px;
     }
-
+    
     .rot-row h6 span {
         font-size: 9px;
     }
