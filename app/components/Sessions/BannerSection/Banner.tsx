@@ -1,7 +1,7 @@
 import "./Banner.css";
 import Image from "next/image";
 import Link from "next/link";
-import PhoneSection from "./PhoneSection";
+
 
 
 const Banner = () => {
@@ -54,7 +54,7 @@ const Banner = () => {
             </div>
           </div>
 
-          <PhoneSection />
+
 
 
         </div>

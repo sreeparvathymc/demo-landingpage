@@ -10,7 +10,7 @@ const users = [
 
 export default function PhoneSection() {
   return (
-    <section className="phone-section">
+    <div className="phone-section">
       <div className="ph-outer">
         <Image src="/images/iPhone.png" alt="Mobile" width={420} height={850} />
 
@@ -69,6 +69,6 @@ export default function PhoneSection() {
         </div>
 
         </div>
-    </section>
+    </div>
   );
 }

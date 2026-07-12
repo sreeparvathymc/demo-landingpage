@@ -1,10 +1,18 @@
+import PhoneSection from "./PhoneSection";
 import RotatingDiv from "./RotatingDiv";
 import "./Workflow.css";
 
 const WorkFlow = () => {
   return (
-    <div className="session workflow-session">
+
+
+    <div className="wrap-flow">
+
+
+      <div className="session workflow-session">
       <div className="flowin1">
+
+          <PhoneSection />
         <div className="flowin2">
           <div className="flowin3">
             <div className="containers">
@@ -38,6 +46,11 @@ const WorkFlow = () => {
         </div>
       </div>
     </div>
+
+    </div>
+
+
+
   );
 };
 

@@ -72,5 +72,6 @@
   background: url(/images/gradient-top.png) no-repeat;
 
       background-size: contain;
+      background-size: 100%;
 
 }

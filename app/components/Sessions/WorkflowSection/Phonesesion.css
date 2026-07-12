@@ -1,0 +1,97 @@
+.phone-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 290px;
+}
+
+.phone-section img {
+    display: block;
+}
+
+.ph-outer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: transform 1.5s cubic-bezier(0.22, 1, 0.36, 1),
+                opacity 1.5s ease;
+    will-change: transform;
+        transform: translateY(590px);
+        width: 420px;
+
+}
+.ph-outer img{
+    width: 100%;
+    display: block;
+}
+
+.scroll-started .ph-outer {
+    position: relative;
+    transform: translateY(0);
+    /* aspect-ratio: 16 / 32.21; */
+}
+
+.scroll-started .sticky-overlap {
+    bottom: 200px;
+}
+
+/* -------------------- Cards -------------------- */
+
+.trust-card,
+.verified-card {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.trust-card {
+    background: red;
+    margin-right: auto;
+}
+
+.verified-card {
+    background: rgb(212, 193, 193);
+    margin-left: auto;
+}
+
+/* -------------------- Avatars -------------------- */
+
+.avatars img:nth-child(2),
+.avatars img:nth-child(3) {
+    margin-top: -24px;
+}
+
+/* -------------------- Text -------------------- */
+
+.trust-content {
+    padding-left: 9px;
+}
+
+.trust-content h3 {
+    font-size: 22px;
+    font-family: Outfit;
+}
+
+.trust-content p {
+    font-size: 14px;
+    font-family: PTserif;
+}
+
+/* -------------------- Card Wrapper -------------------- */
+
+.sticky-overlap {
+    position: absolute;
+    bottom: 0;
+     width: 740px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+     transition: transform 1.5s cubic-bezier(0.22, 1, 0.36, 1),
+                opacity 1.5s ease;
+    will-change: transform;
+}
