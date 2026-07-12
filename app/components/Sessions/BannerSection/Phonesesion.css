@@ -1,0 +1,92 @@
+.phone-section{
+    height:180vh;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    overflow:hidden;
+}
+
+.phone-section img{
+    display:block;
+}
+
+.ph-outer {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.phone-section{
+    position:relative;
+}
+
+.trust-card{
+    position:absolute;
+    top:120px;
+    left:0;
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+    padding:20px 26px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.78);
+    backdrop-filter:blur(28px);
+    -webkit-backdrop-filter:blur(28px);
+
+    border:1px solid rgba(255,255,255,.85);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.08),
+        inset 0 1px 0 rgba(255,255,255,.8);
+}
+
+/* Avatars */
+
+.avatars{
+    display:flex;
+    flex-direction:column;
+}
+
+.avatars img{
+    width:34px;
+    height:34px;
+    border-radius:50%;
+    object-fit:cover;
+
+    border:2px solid #fff;
+
+    margin-top:-10px;
+}
+
+.avatars img:first-child{
+    margin-top:0;
+}
+
+/* Text */
+
+.trust-content h3{
+    margin:0;
+
+    font-family:"Outfit";
+    font-size:24px;
+    font-weight:600;
+    line-height:1;
+
+    color:#161616;
+}
+
+.trust-content p{
+    margin-top:8px;
+
+    font-family:"Cormorant Garamond";
+    font-size:18px;
+    line-height:1.2;
+
+    color:#6F665C;
+}
