@@ -73,7 +73,7 @@ body {
 }
 
 .containers{
-max-width: 1300px;
+max-width: 1320px;
 margin-inline: auto;
 }
 
@@ -81,7 +81,7 @@ margin-inline: auto;
 color: #E7B101;
 font-size: 14px;
   font-family: "Outfit";
-  line-height: 1; margin: 0 0 10px; position: relative; padding-left: 10px;
+  line-height: 1; margin: 0 0 10px; position: relative; padding-left: 9px;
 }
 
 .session h5::before{
@@ -90,8 +90,8 @@ font-size: 14px;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
   background: #E7B101;
   border-radius: 50%;
 }
@@ -110,4 +110,78 @@ p{
     font-family: "PTserif";
     color: #000000;
     font-size: 18px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1400px) {
+.containers{
+  max-width: 100%;
+    width: 92%;
+}
+}
+
+@media screen and (max-width: 1240px) {
+
+
+.session h2 {
+
+    font-size: 54px;}
+
+
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .session h2 {
+        font-size: 48px;
+    }
+
+    p{
+
+    font-size: 16px;
+}
+
+
+  }
+
+@media screen and (max-width: 900px) {
+
+    .session h2 {
+        font-size: 45px;
+    }
+  }
+
+
+
+@media screen and (max-width: 767px) {
+ .session h2 {
+        font-size: 40px;
+    }
+
+  }
+
+
+@media screen and (max-width: 600px) {
+.containers{
+    width: 90%;
+}
+
+ .session h2 {
+        font-size: 36px;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+ .session h2 {
+        font-size: 34px;
+    }
 }

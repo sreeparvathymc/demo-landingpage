@@ -18,3 +18,67 @@
 .preview-col2 p span {
     display: block;
 }
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1340px) {
+
+}
+
+
+@media screen and (max-width: 1240px) {
+
+       .preview-section {
+    padding: 80px 0;
+}
+
+.preview-section h2 span{display: inline;}
+.preview-col2 p span{display: inline;}
+
+.preview-col1 {
+    max-width: 60%;
+}
+
+.preview-col2 {
+    max-width: 38%;
+     padding-top: 40px;
+}
+.preview-div{align-items: flex-start;}
+
+
+
+
+}
+
+@media screen and (max-width: 1024px) {
+.preview-col1{width: 100%; max-width: 100%;}
+.preview-col2{width: 100%; max-width: 100%; padding-top: 0;}
+}
+
+@media screen and (max-width: 900px) {
+
+}
+
+
+@media screen and (max-width: 767px) {
+    .preview-section {
+    padding: 60px 0;
+}
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+}
+
+
+@media screen and  (max-width: 480px) {
+
+}

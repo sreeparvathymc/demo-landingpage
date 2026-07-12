@@ -8,9 +8,9 @@ export default function Home() {
     <div>
       <main>
 
-        <Banner />
+        {/* <Banner /> */}
 
-        <WorkFlow />
+        {/* <WorkFlow /> */}
 
         <PrevieSection />
 
