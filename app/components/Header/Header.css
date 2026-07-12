@@ -10,7 +10,7 @@ header {
     transform: translateX(-50%);
     border-radius: 30px;
     z-index: 9999;
-    background: red;
+    background: #ffffff;
 }
 
 .header-container {

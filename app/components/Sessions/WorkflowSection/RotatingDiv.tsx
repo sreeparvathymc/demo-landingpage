@@ -113,7 +113,7 @@ const RotatingDiv = () => {
       {/* Center Logo */}
       <div className="logo-container">
         <div className="logo-box">
-          <Image src="/icons/logo.png" alt="Brand Logo" width={30} height={30} />
+          <Image src="/icons/logo.png" alt="Brand Logo" width={35} height={35} />
         </div>
       </div>
     </div>

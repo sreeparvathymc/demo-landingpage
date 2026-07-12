@@ -58,7 +58,7 @@
     position: relative;
 }
 
-/* .flowin1::after {
+.flowin1::after {
     content: "";
     position: absolute;
     left: 0;
@@ -72,7 +72,7 @@
         #f3f2ef
     );
 
-} */
+}
 
 
 
