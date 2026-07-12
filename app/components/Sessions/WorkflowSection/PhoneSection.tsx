@@ -13,23 +13,10 @@ export default function PhoneSection() {
     <div className="phone-section">
       <div className="ph-outer">
         <Image src="/images/iPhone.png" alt="Mobile" width={420} height={850} />
-
-
-
-
-
-
-
-
-
-
-
-
       </div>
 
-       <div className="sticky-overlap">
-
-           <div className="trust-card">
+      <div className="sticky-overlap">
+        <div className="trust-card">
           <div className="avatars">
             {users.map((user, index) => (
               <Image
@@ -67,8 +54,7 @@ export default function PhoneSection() {
             </p>
           </div>
         </div>
-
-        </div>
+      </div>
     </div>
   );
 }

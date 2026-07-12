@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./Platform.css";
 import PlatformCardSession from "./PlatformCardSession";
 
@@ -20,7 +20,6 @@ const PrevieSection = () => {
             </p>
           </div>
         </div>
-
 
         <div className="">
           <PlatformCardSession />

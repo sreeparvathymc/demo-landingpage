@@ -2,8 +2,6 @@ import "./Banner.css";
 import Image from "next/image";
 import Link from "next/link";
 
-
-
 const Banner = () => {
   return (
     <div suppressHydrationWarning>
@@ -53,10 +51,6 @@ const Banner = () => {
               </Link>
             </div>
           </div>
-
-
-
-
         </div>
       </div>
     </div>

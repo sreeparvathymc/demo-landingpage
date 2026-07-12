@@ -3,9 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --color-orange: #E88F00;
+  --color-orange: #e88f00;
   --color-grey: #929292;
-  --color-black: #2B2B2B;
+  --color-black: #2b2b2b;
 }
 
 @theme inline {
@@ -21,7 +21,6 @@
     --foreground: #ededed;
   }
 }
-
 
 @font-face {
   font-family: "Outfit-light";
@@ -53,7 +52,6 @@
   font-display: swap;
 }
 
-
 @font-face {
   font-family: "PTserif";
   src:
@@ -64,31 +62,29 @@
   font-display: swap;
 }
 
-
 body {
   background: #ffffff;
   color: #000000;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
-
 }
 
-
-
-
-.containers{
-max-width: 1320px;
-margin-inline: auto;
+.containers {
+  max-width: 1320px;
+  margin-inline: auto;
 }
 
-.session h5{
-color: #E7B101;
-font-size: 14px;
+.session h5 {
+  color: #e7b101;
+  font-size: 14px;
   font-family: "Outfit";
-  line-height: 1; margin: 0 0 10px; position: relative; padding-left: 9px;
+  line-height: 1;
+  margin: 0 0 10px;
+  position: relative;
+  padding-left: 9px;
 }
 
-.session h5::before{
+.session h5::before {
   content: "";
   position: absolute;
   left: 0;
@@ -96,96 +92,75 @@ font-size: 14px;
   transform: translateY(-50%);
   width: 5px;
   height: 5px;
-  background: #E7B101;
+  background: #e7b101;
   border-radius: 50%;
 }
 
-.session h2{
-color: var(--color-black);
-font-size: 60px;
+.session h2 {
+  color: var(--color-black);
+  font-size: 60px;
   font-family: "Outfit";
   line-height: 1;
   margin: 0 0 28px;
 }
 a,
-button{transition: all 0.5s ease-in-out;}
-
-p{
-    font-family: "PTserif";
-    color: #000000;
-    font-size: 18px;
+button {
+  transition: all 0.5s ease-in-out;
 }
 
-
-
-
-
+p {
+  font-family: "PTserif";
+  color: #000000;
+  font-size: 18px;
+}
 
 @media screen and (max-width: 1400px) {
-.containers{
-  max-width: 100%;
+  .containers {
+    max-width: 100%;
     width: 92%;
-}
+  }
 }
 
 @media screen and (max-width: 1240px) {
-
-
-.session h2 {
-
-    font-size: 54px;}
-
-
+  .session h2 {
+    font-size: 54px;
+  }
 }
-
-
-
 
 @media screen and (max-width: 1024px) {
-    .session h2 {
-        font-size: 48px;
-    }
-
-    p{
-
-    font-size: 16px;
-}
-
-
+  .session h2 {
+    font-size: 48px;
   }
+
+  p {
+    font-size: 16px;
+  }
+}
 
 @media screen and (max-width: 900px) {
-
-    .session h2 {
-        font-size: 45px;
-    }
+  .session h2 {
+    font-size: 45px;
   }
-
-
+}
 
 @media screen and (max-width: 767px) {
- .session h2 {
-        font-size: 40px;
-    }
-
+  .session h2 {
+    font-size: 40px;
   }
-
+}
 
 @media screen and (max-width: 600px) {
-.containers{
+  .containers {
     width: 90%;
+  }
+
+  .session h2 {
+    font-size: 36px;
+  }
 }
-
- .session h2 {
-        font-size: 36px;
-    }
-}
-
-
 
 @media screen and (max-width: 480px) {
-
- .session h2 {
-        font-size: 30px;
-    }
+  .session h2 {
+    font-size: 30px;
+  }
 }

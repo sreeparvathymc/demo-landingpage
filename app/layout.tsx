@@ -35,17 +35,11 @@ export default function RootLayout({
         <Header />
         <main>
           <ScrollBodyClass />
-                  {children}
-
-
+          {children}
         </main>
 
         <Footer />
-
       </body>
-
-
-
     </html>
   );
 }

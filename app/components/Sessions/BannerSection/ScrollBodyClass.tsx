@@ -7,14 +7,12 @@ export default function ScrollBodyClass() {
     let hasScrolled = false;
 
     const handleScroll = () => {
-      // Class while scrolling
       if (window.scrollY > 0) {
         document.body.classList.add("scrolled");
       } else {
         document.body.classList.remove("scrolled");
       }
 
-      // Add once and never remove
       if (!hasScrolled && window.scrollY > 0) {
         document.body.classList.add("scroll-started");
         hasScrolled = true;
@@ -23,7 +21,6 @@ export default function ScrollBodyClass() {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Check initial state
     handleScroll();
 
     return () => {

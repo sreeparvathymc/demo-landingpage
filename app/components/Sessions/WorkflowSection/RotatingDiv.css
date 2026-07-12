@@ -18,7 +18,6 @@
     pointer-events: none;
 }
 
-/* Position items on the circular orbit */
 .rot-row {
     position: absolute;
     top: 50%;
@@ -27,7 +26,6 @@
     pointer-events: auto;
 }
 
-/* Styling for the cards (matching mockup: white background, fully rounded pill, thin border, soft shadow) */
 .rot-rowin {
     background: #ffffff;
     width: max-content;
@@ -36,23 +34,22 @@
     align-items: center;
     border-radius: 100px;
     border: 1px solid rgba(0, 0, 0, 0.05);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.01);
-    transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1),
-                background-color 0.4s,
-                border-color 0.4s,
-                box-shadow 0.4s,
-                opacity 0.4s;
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, 0.03),
+        0 1px 3px rgba(0, 0, 0, 0.01);
+    transition:
+        transform 1.2s cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 0.4s,
+        border-color 0.4s,
+        box-shadow 0.4s,
+        opacity 0.4s;
     opacity: 0.8;
 }
 
-/* Base counter-rotation for cards to stay upright relative to screen */
 .rot-row .rot-rowin {
     transform: rotate(calc(-1 * var(--rot-angle, 0deg))) scale(1);
 }
 
-
-
-/* Icon Container (matching mockup: raw SVG icon without border/background) */
 .icon-rotateer {
     width: 28px;
     height: 28px;
@@ -69,36 +66,31 @@
     object-fit: contain;
 }
 
-/* Card Typography */
 .rot-row h6 {
     font-family: "Outfit", sans-serif;
     font-size: 15px;
     font-weight: 500;
     line-height: 1.25;
-    color: #4A4A4A;
+    color: #4a4a4a;
     margin: 0;
     text-align: left;
 }
 
 .rot-row h6 span {
     display: block;
-
 }
 
 .rot-rowin.active h6 {
     color: #222222;
 }
 
-
-
-/* Central Concentric Orbits styling */
 .center-orbit {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border: 1.5px solid #ffffff;
-    border-radius: 35%; /* Squircle shape */
+    border-radius: 35%;
     pointer-events: none;
     z-index: 1;
     box-sizing: border-box;
@@ -124,7 +116,10 @@
     height: 250px;
     border-radius: 54px;
     border: 4px solid rgba(255, 255, 255, 0.95);
-    background: radial-gradient(circle, rgba(231, 177, 1, 0.22) 0%, rgba(231, 177, 1, 0.04) 60%, rgba(255, 255, 255, 0) 100%);
+    background: radial-gradient(circle,
+            rgba(231, 177, 1, 0.22) 0%,
+            rgba(231, 177, 1, 0.04) 60%,
+            rgba(255, 255, 255, 0) 100%);
 }
 
 .orbit-1 {
@@ -134,7 +129,6 @@
     border: 4px solid rgba(255, 255, 255, 0.95);
 }
 
-/* Center Logo Container */
 .logo-container {
     position: absolute;
     top: 50%;
@@ -148,33 +142,12 @@
     width: 80px;
     height: 80px;
 
-
-
-
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Mobile Responsiveness */
 @media (max-width: 767px) {
     .rot-outer {
         --orbit-radius: 105px;

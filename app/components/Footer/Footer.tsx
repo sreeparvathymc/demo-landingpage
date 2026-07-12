@@ -17,7 +17,6 @@ const footerLinks = {
     { name: "FAQs", url: "/" },
   ],
 
-
   col3Links: [
     {
       name: "USA",
@@ -30,7 +29,6 @@ const footerLinks = {
       img: "/icons/footercall.svg",
     },
   ],
-
 
   col4Links: [
     {
@@ -96,15 +94,15 @@ const Footer = () => {
                 <h4>Contact</h4>
 
                 <ul>
-  {footerLinks.col3Links.map((link, index) => (
-    <li key={index}>
-      <Link href={link.url}>
-        <img src={link.img} alt={link.name} />
-        <span>{link.name}</span>
-      </Link>
-    </li>
-  ))}
-</ul>
+                  {footerLinks.col3Links.map((link, index) => (
+                    <li key={index}>
+                      <Link href={link.url}>
+                        <img src={link.img} alt={link.name} />
+                        <span>{link.name}</span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
               </div>
 
               {/* ---------------- */}

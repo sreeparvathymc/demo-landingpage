@@ -1,10 +1,7 @@
-
-
-.workflow-session{
+.workflow-session {
   position: relative;
-         background: #f7f7f7;
-      }
-
+  background: #f7f7f7;
+}
 
 .workflow-session::before {
   content: "";
@@ -21,213 +18,182 @@
   pointer-events: none;
 }
 
-
-.intro{
+.intro {
   text-align: center;
-      margin-block: 130px;
-      position: relative;
-      z-index: 9;
+  margin-block: 130px;
+  position: relative;
+  z-index: 9;
 }
 
-.intro h2 span{display: block;}
-
-
+.intro h2 span {
+  display: block;
+}
 
 .intro h5 {
-    width: fit-content;
-    margin-inline: auto;
+  width: fit-content;
+  margin-inline: auto;
 }
 
-
-
-
-
-
-
 .flowin1 {
+  padding-top: 0;
 
-    padding-top: 0;
-
-    padding-inline: 40px;
-    position: relative;
+  padding-inline: 40px;
+  position: relative;
 }
 
-
-
 .flowin1 {
-    position: relative;
+  position: relative;
 }
 
 .flowin1::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 1400px;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1400px;
 
-    background: linear-gradient(
-        to bottom,
-        transparent,
-        #f3f2ef
-    );
-
+  background: linear-gradient(to bottom, transparent, #f3f2ef);
 }
-
-
 
 .flowin2 {
   position: relative;
 }
 
+.flowin2 {
+  position: relative;
+}
+.flowin2::before {
+  content: "";
+  z-index: 9;
+  pointer-events: none;
+  background: url(/images/hero_gradient.png) top / cover no-repeat;
 
-
-
-.flowin2{position: relative;}
-.flowin2::before{
-        content: "";
-    z-index: 9;
-    pointer-events: none;
-    background: url(/images/hero_gradient.png) top / cover no-repeat;
-
-
-        width: 480px;
-    height: 1029px;
-    position: absolute;
-    top: -500px;
-    right: -40px;
+  width: 480px;
+  height: 1029px;
+  position: absolute;
+  top: -500px;
+  right: -40px;
 }
 
+.flowin3 {
+  padding-top: 200px;
+  padding-bottom: 130px;
 
+  background:
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 45%,
+      rgba(248, 247, 245, 0.4) 60%,
+      rgba(248, 247, 245, 0.8) 100%,
+      #f3f2ef 100%
+    ),
+    url("/images/bg-grad.png");
 
+  background-repeat: no-repeat, no-repeat;
 
+  /* gradient        image */
+  background-size:
+    100% 100%,
+    100% 90%;
 
-.flowin3{
-    padding-top: 200px;
-    padding-bottom: 130px;
-
-    background:
-        linear-gradient(
-            to bottom,
-            transparent 0%,
-            transparent 45%,
-            rgba(248,247,245,.4) 60%,
-            rgba(248,247,245,.8) 100%,
-            #f3f2ef 100%
-        ),
-        url("/images/bg-grad.png");
-
-    background-repeat: no-repeat, no-repeat;
-
-    /* gradient        image */
-    background-size: 100% 100%, 100% 90%;
-
-    /* gradient        image */
-    background-position: center, top center;
+  /* gradient        image */
+  background-position:
+    center,
+    top center;
 }
 
-
-
-.into1{position: relative; z-index: 99;}
-
-
+.into1 {
+  position: relative;
+  z-index: 99;
+}
 
 @media screen and (max-width: 1340px) {
-
 }
-
 
 @media screen and (max-width: 1240px) {
-.flowin1 {
-    padding-inline: 20px;}
+  .flowin1 {
+    padding-inline: 20px;
+  }
 
-.flowin2:before {
-right: -20px; opacity: 0.4;
+  .flowin2:before {
+    right: -20px;
+    opacity: 0.4;
     width: 396px;
-    height: 953px;}
+    height: 953px;
+  }
 
+  .flowin3 {
+    padding-bottom: 80px;
+    padding-top: 150px;
+  }
 
-    .flowin3{padding-bottom: 80px; padding-top: 150px;}
-
-    .intro {
+  .intro {
     text-align: center;
     z-index: 9;
-    margin-block: 80px;}
+    margin-block: 80px;
+  }
 
-
-    .flowin3 {
-    background: linear-gradient(#0000 0% 45%, #f8f7f566 60%, #f8f7f5cc 100%, #f3f2ef 100%) center / 100% 100% no-repeat, url(/images/gradient-top.png) top / 100% 69% no-repeat;
-
-}
-
+  .flowin3 {
+    background:
+      linear-gradient(#0000 0% 45%, #f8f7f566 60%, #f8f7f5cc 100%, #f3f2ef 100%)
+        center / 100% 100% no-repeat,
+      url(/images/gradient-top.png) top / 100% 69% no-repeat;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-
 }
 
 @media screen and (max-width: 900px) {
-
-        .flowin3 {
-    background: linear-gradient(#0000 0% 45%, #f8f7f566 60%, #f8f7f5cc 100%, #f3f2ef 100%) center / 100% 100% no-repeat, url(/images/gradient-top.png) top / 100% 40% no-repeat;
-
+  .flowin3 {
+    background:
+      linear-gradient(#0000 0% 45%, #f8f7f566 60%, #f8f7f5cc 100%, #f3f2ef 100%)
+        center / 100% 100% no-repeat,
+      url(/images/gradient-top.png) top / 100% 40% no-repeat;
+  }
 }
-
-}
-
 
 @media screen and (max-width: 767px) {
+  .flowin1 {
+    padding-inline: 15px;
+  }
 
-.flowin1 {
-    padding-inline: 15px;}
+  .flowin2:before {
+    right: -15px;
+  }
+  .flowin3 {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
 
-
-    .flowin2:before {
-right: -15px;
-
-
+  .intro {
+    margin-block: 50px;
+  }
 }
-    .flowin3{ padding-top: 100px; padding-bottom: 40px;}
-
-
-        .intro {
-
-        margin-block: 50px;
-    }
-
-
-}
-
-
-
-
 
 @media screen and (max-width: 600px) {
-
-    .workflow-session:before {
-        width: 400px;
-        height: 400px;
-    }
-
+  .workflow-session:before {
+    width: 400px;
+    height: 400px;
+  }
 }
 
+@media screen and (max-width: 480px) {
+  .flowin3 {
+    background:
+      linear-gradient(#0000 0% 45%, #f8f7f566 60%, #f8f7f5cc 100%, #f3f2ef 100%)
+        center / 100% 100% no-repeat,
+      url(/images/gradient-top.png) top / 100% 22% no-repeat;
+  }
 
-@media screen and  (max-width: 480px) {
-.flowin3 {
-        background: linear-gradient(#0000 0% 45%, #f8f7f566 60%, #f8f7f5cc 100%, #f3f2ef 100%) center / 100% 100% no-repeat, url(/images/gradient-top.png) top / 100% 22% no-repeat;
-    }
-
-
-.intro h2 span {
+  .intro h2 span {
     display: inline;
+  }
+
+  .workflow-session:before {
+    width: 300px;
+    height: 300px;
+  }
 }
-
- .workflow-session:before {
-        width: 300px;
-        height: 300px;
-    }
-}
-
-
-
-

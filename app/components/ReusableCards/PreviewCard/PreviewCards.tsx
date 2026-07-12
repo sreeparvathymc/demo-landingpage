@@ -1,7 +1,5 @@
 import Image from "next/image";
-import React from "react";
-import "./Preview.css"
-
+import "./Preview.css";
 
 type PreviewCardsProps = {
   heading?: string;
@@ -24,14 +22,7 @@ const PreviewCards = ({
       </div>
 
       <div className="prevcol2">
-        {image && (
-          <Image
-            src={image}
-            alt={alt}
-            width={500}
-            height={350}
-          />
-        )}
+        {image && <Image src={image} alt={alt} width={500} height={350} />}
       </div>
     </div>
   );
