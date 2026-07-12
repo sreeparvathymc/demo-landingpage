@@ -73,7 +73,10 @@ const RotatingDiv = () => {
   const activeIndex = Math.round((5 - (angle / 72) % 5) % 5);
 
   return (
-    <div
+
+    <div className="rot-wrapp">
+
+       <div
       ref={containerRef}
       className="rot-outer"
       style={{ "--rot-angle": `${angle}deg` } as React.CSSProperties}
@@ -117,6 +120,15 @@ const RotatingDiv = () => {
         </div>
       </div>
     </div>
+
+    </div>
+
+
+
+
+
+
+
   );
 };
 
