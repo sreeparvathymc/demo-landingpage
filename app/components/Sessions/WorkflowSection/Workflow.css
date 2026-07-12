@@ -89,7 +89,7 @@
       rgba(248, 247, 245, 0.8) 100%,
       #f3f2ef 100%
     ),
-    url("/images/bg-grad.png");
+    url("/images/gradient-top.png");
 
   background-repeat: no-repeat, no-repeat;
 
@@ -98,7 +98,7 @@
     100% 100%,
     100% 90%;
 
-  /* gradient        image */
+
   background-position:
     center,
     top center;
@@ -110,9 +110,27 @@
 }
 
 @media screen and (max-width: 1340px) {
+
+
 }
 
 @media screen and (max-width: 1240px) {
+.flowin3{
+background:
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 45%,
+      rgba(248, 247, 245, 0.4) 60%,
+      rgba(248, 247, 245, 0.8) 100%,
+      #f3f2ef 100%
+    ),
+    url("/images/bg-5.png") no-repeat;
+}
+
+
+
+
   .flowin1 {
     padding-inline: 20px;
   }
@@ -126,7 +144,7 @@
 
   .flowin3 {
     padding-bottom: 80px;
-    padding-top: 150px;
+    padding-top: 240px;
   }
 
   .intro {
@@ -136,10 +154,9 @@
   }
 
   .flowin3 {
-    background:
-      linear-gradient(#0000 0% 45%, #f8f7f566 60%, #f8f7f5cc 100%, #f3f2ef 100%)
-        center / 100% 100% no-repeat,
-      url(/images/gradient-top.png) top / 100% 69% no-repeat;
+      background-size:
+    100% 100%,
+    100% 69%;
   }
 }
 
@@ -148,10 +165,9 @@
 
 @media screen and (max-width: 900px) {
   .flowin3 {
-    background:
-      linear-gradient(#0000 0% 45%, #f8f7f566 60%, #f8f7f5cc 100%, #f3f2ef 100%)
-        center / 100% 100% no-repeat,
-      url(/images/gradient-top.png) top / 100% 40% no-repeat;
+     background-size:
+    100% 100%,
+    100% 40%;
   }
 }
 
@@ -171,6 +187,17 @@
   .intro {
     margin-block: 50px;
   }
+
+
+    .flowin2:before {
+      
+        width: 200px;
+        height: 400px;
+        right: -20px;
+        top: -234px;
+    }
+
+
 }
 
 @media screen and (max-width: 600px) {
@@ -182,10 +209,9 @@
 
 @media screen and (max-width: 480px) {
   .flowin3 {
-    background:
-      linear-gradient(#0000 0% 45%, #f8f7f566 60%, #f8f7f5cc 100%, #f3f2ef 100%)
-        center / 100% 100% no-repeat,
-      url(/images/gradient-top.png) top / 100% 22% no-repeat;
+      background-size:
+    100% 100%,
+    100% 22%;
   }
 
   .intro h2 span {
