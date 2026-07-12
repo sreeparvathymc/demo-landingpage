@@ -58,7 +58,7 @@
     position: relative;
 }
 
-.flowin1::after {
+/* .flowin1::after {
     content: "";
     position: absolute;
     left: 0;
@@ -72,7 +72,7 @@
         #f3f2ef
     );
 
-}
+} */
 
 
 
@@ -125,3 +125,95 @@
     /* gradient        image */
     background-position: center, top center;
 }
+
+
+
+
+
+
+
+@media screen and (max-width: 1340px) {
+
+}
+
+
+@media screen and (max-width: 1240px) {
+.flowin1 {
+    padding-inline: 20px;}
+
+.flowin2:before {
+right: -20px; opacity: 0.4;
+    width: 396px;
+    height: 953px;}
+
+
+    .flowin3{padding-bottom: 80px; padding-top: 150px;}
+
+    .intro {
+    text-align: center;
+    z-index: 9;
+    margin-block: 80px;}
+
+
+    .flowin3 {
+    background: linear-gradient(#0000 0% 45%, #f8f7f566 60%, #f8f7f5cc 100%, #f3f2ef 100%) center / 100% 100% no-repeat, url(/images/gradient-top.png) top / 100% 69% no-repeat;
+
+}
+
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 900px) {
+
+        .flowin3 {
+    background: linear-gradient(#0000 0% 45%, #f8f7f566 60%, #f8f7f5cc 100%, #f3f2ef 100%) center / 100% 100% no-repeat, url(/images/gradient-top.png) top / 100% 40% no-repeat;
+
+}
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+.flowin1 {
+    padding-inline: 15px;}
+
+
+    .flowin2:before {
+right: -15px;
+
+
+}
+    .flowin3{ padding-top: 100px;}
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+}
+
+
+@media screen and  (max-width: 480px) {
+.flowin3 {
+        background: linear-gradient(#0000 0% 45%, #f8f7f566 60%, #f8f7f5cc 100%, #f3f2ef 100%) center / 100% 100% no-repeat, url(/images/gradient-top.png) top / 100% 22% no-repeat;
+    }
+
+
+.intro h2 span {
+    display: inline;
+}
+
+
+}
+
+
+
+

@@ -47,14 +47,37 @@
     border-radius: 12px;
 }
 
-.trust-card {
-    background: red;
+.trust-card{
+
     margin-right: auto;
+    border: 1px solid rgba(255,255,255,.35);
+
+    box-shadow:
+        0 12px 40px rgba(0,0,0,.08),
+        inset 0 1px 1px rgba(255,255,255,.7);
+
+        background: #ffffff33;
+backdrop-filter: blur(40px);
 }
 
+
+
+
+
+
+
 .verified-card {
-    background: rgb(212, 193, 193);
     margin-left: auto;
+
+
+     border: 1px solid rgba(255,255,255,.35);
+
+    box-shadow:
+        0 12px 40px rgba(0,0,0,.08),
+        inset 0 1px 1px rgba(255,255,255,.7);
+
+        background: #ffffff33;
+backdrop-filter: blur(40px);
 }
 
 /* -------------------- Avatars -------------------- */
@@ -94,4 +117,118 @@
      transition: transform 1.5s cubic-bezier(0.22, 1, 0.36, 1),
                 opacity 1.5s ease;
     will-change: transform;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1340px) {
+
+}
+
+
+@media screen and (max-width: 1240px) {
+
+
+.ph-outer {
+
+    width: 360px;}
+
+
+ .sticky-overlap {
+
+    width: 663px;}
+
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .ph-outer {
+        width: 310px;
+    }
+
+        .sticky-overlap {
+        width: 624px;
+    }
+
+.trust-content h3 {
+    font-size: 20px;
+}
+
+
+
+}
+
+
+@media screen and (max-width: 767px) {
+    .ph-outer {
+        width: 300px;
+    }
+
+.trust-content p {
+    font-family: PTserif;
+    font-size: 13px;
+}
+
+    .sticky-overlap {
+        width: 572px;
+    }
+.verified-icon img,
+    .trust-card img {
+    width: 34px;
+    height: 34px;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+        .sticky-overlap {
+        width: 449px;
+    }
+
+        .ph-outer {
+        width: 240px;
+    }
+
+    .trust-card, .verified-card {
+
+    padding: 10px;}
+
+      .trust-content h3 {
+        font-size: 16px;
+    }
+
+    .trust-content p {
+        font-size: 10px;
+    }
+
+}
+
+
+@media screen and  (max-width: 480px) {
+    .ph-outer {
+        width: 190px;
+    }
+
+    .sticky-overlap {
+        width: 300px;
+    }
+
+
+
 }
