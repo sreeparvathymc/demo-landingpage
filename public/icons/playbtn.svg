@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none">
+  <!-- Outer Circle -->
+  <circle cx="36" cy="36" r="36" fill="#F2A100"></circle>
+
+  <!-- Inner Circle -->
+  <circle cx="36" cy="36" r="24" fill="#FFB53B"></circle>
+
+  <!-- Play Icon -->
+  <path d="M31 25L46 36L31 47V25Z" fill="none" stroke="white" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"></path>
+</svg>

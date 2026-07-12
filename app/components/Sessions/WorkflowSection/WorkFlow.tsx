@@ -4,8 +4,11 @@ import "./Workflow.css"
 const WorkFlow = () => {
   return (
     <div className='session workflow-session'>
+      <div className="flowin1">
+         <div className="flowin2">
+         <div className="flowin3">
 
-      <div className="containers">
+        <div className="containers">
         <div className="into1">
         <h2>PDFs get forged. Emails get lost. Manual checks <span>create liability.</span> </h2>
         <h2>Lorem replaces static documents with cryptographically signed credentials issued directly from the source, with a full audit trail.</h2>
@@ -25,6 +28,18 @@ const WorkFlow = () => {
       </div>
 
       </div>
+
+
+      </div>
+
+      </div>
+
+      </div>
+
+
+
+
+
 
       <RotatingDiv />
 

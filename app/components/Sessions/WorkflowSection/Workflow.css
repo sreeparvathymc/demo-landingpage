@@ -1,8 +1,12 @@
 
 
 .workflow-session{
-  position: relative; background: #F7F7F7;   padding: 200px 0 100px;
+  position: relative; background: #F7F7F7;   padding: 0 0 100px;
 }
+
+
+
+
 
 .workflow-session::before {
   content: "";
@@ -35,3 +39,34 @@
     margin-inline: auto;
 }
 
+
+
+
+
+
+
+.flowin1 {
+
+    padding-top: 0;
+
+    padding-inline: 40px;
+}
+
+
+
+
+.flowin2 {
+  padding-top: 200px;
+  position: relative;
+background:
+
+  linear-gradient(
+    180deg,
+    #F8F2E8 0%,
+    #F4EFE8 18%,
+    #F8F6F2 42%,
+    #FCFBF9 70%,
+    #FFFFFF 100%
+  );  background-position: top;
+
+}
