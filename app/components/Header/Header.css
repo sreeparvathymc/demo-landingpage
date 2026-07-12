@@ -1,6 +1,6 @@
 header {
     background: #ffffff;
-    padding: 20px 20px;
+    padding: 15px 15px;
     max-width: 1320px;
     margin-inline: auto;
     width: 100%;
@@ -8,10 +8,21 @@ header {
     top: 30px;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 30px;
+    border-radius: 50px;
     z-index: 9999;
     background: #ffffff;
+    transition: all 0.5s ease-in-out;
 }
+.scrolled header{
+box-shadow: 0 4px 12px #0000000d;
+
+}
+
+
+
+
+
+
 
 .header-container {
     display: flex;
@@ -36,12 +47,20 @@ header {
 
 .header-container ul li a {
     color: #929292;
-      font-family: "Outfit-medium"; font-size: 16px;
+     font-family: Outfit;
+      font-size: 16px;
 
 }
 .header-container ul li a.active {
     color: #E88F00;
 }
+
+
+.header-container ul li:first-child a {
+    color: #E88F00;
+}
+
+
 .header-container ul li a:hover{
     color: #E88F00;
 }

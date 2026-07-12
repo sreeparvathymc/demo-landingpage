@@ -39,21 +39,20 @@ const Header = () => {
           <Link href="/" className="sign-inbtn">
             Sign In
             <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="14"
-    height="14"
-    
-    viewBox="0 0 20 20"
-    fill="none"
-  >
-    <path
-      d="M5 15L15 5M15 5H8M15 5V12"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 20 20"
+              fill="none"
+            >
+              <path
+                d="M5 15L15 5M15 5H8M15 5V12"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
           </Link>
         </div>
 
@@ -66,34 +65,30 @@ const Header = () => {
           <div className="mob-right">
             <Link href="/" className="sign-inbtn">
               Sign In
-
               <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="20"
-    height="20"
-    viewBox="0 0 20 20"
-    fill="none"
-  >
-    <path
-      d="M5 15L15 5M15 5H8M15 5V12"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-
-
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M5 15L15 5M15 5H8M15 5V12"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
             </Link>
 
-            <button
-              className="hamburger"
-              onClick={() => setMenuOpen(true)}
-            >
-
-
-                          <Image src="/icons/menu-burger.svg" alt="hamburget" width={30} height={30} />
-
+            <button className="hamburger" onClick={() => setMenuOpen(true)}>
+              <Image
+                src="/icons/menu-burger.svg"
+                alt="hamburget"
+                width={30}
+                height={30}
+              />
             </button>
           </div>
         </div>
@@ -101,10 +96,7 @@ const Header = () => {
 
       {/* Overlay */}
       <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
-        <button
-          className="close-btn"
-          onClick={() => setMenuOpen(false)}
-        >
+        <button className="close-btn" onClick={() => setMenuOpen(false)}>
           ✕
         </button>
 
