@@ -20,6 +20,7 @@
 
 .phone-section{
     position:relative;
+    min-height: 340px;
 }
 
 
@@ -31,7 +32,34 @@
 
 
 
+.ph-outer {
+    position: absolute;
+    transform: translateY(60vh);
+}
 
+
+.scrolled .ph-outer{
+    position: relative;
+    transform: translateY(0);
+
+}
+
+
+
+.ph-outer{
+    position: relative; /* Keep this the same */
+    transform: translateY(60vh);
+    opacity: 0;
+    transition:
+        transform 1.5s cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 1.5s ease;
+    will-change: transform;
+}
+
+.scrolled .ph-outer{
+    transform: translateY(0);
+    opacity: 1;
+}
 
 
 .trust-card {

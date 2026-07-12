@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PhoneSection from "./PhoneSection";
 
+
 const Banner = () => {
   return (
     <div suppressHydrationWarning>
@@ -54,6 +55,7 @@ const Banner = () => {
           </div>
 
           <PhoneSection />
+
 
         </div>
       </div>
