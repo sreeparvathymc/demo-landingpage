@@ -5,7 +5,7 @@ import PhoneSection from "./PhoneSection";
 
 const Banner = () => {
   return (
-    <div>
+    <div suppressHydrationWarning>
       <div className="banner-div">
         <div className="containers">
           <div className="banner-intro">
@@ -54,15 +54,6 @@ const Banner = () => {
           </div>
 
           <PhoneSection />
-
-
-
-
-
-
-
-
-
 
         </div>
       </div>

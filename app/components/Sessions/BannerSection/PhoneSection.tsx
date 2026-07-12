@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-
+import "./Phonesesion.css"
 const users = [
   "/images/avathar1.png",
   "/images/avathar1.png",
@@ -53,12 +53,12 @@ export default function PhoneSection() {
     <Image
       src="/icons/verified.svg"
       alt="Verified"
-      width={22}
-      height={22}
+      width={40}
+      height={40}
     />
   </div>
 
-  <div className="verified-content">
+  <div className="verified-content trust-content">
     <h3>10,000+</h3>
     <p>
       credentials verified

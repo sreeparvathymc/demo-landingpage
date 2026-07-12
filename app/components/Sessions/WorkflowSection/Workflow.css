@@ -58,7 +58,7 @@
 .flowin2 {
   padding-top: 200px;
   position: relative;
-background:
+/* background:
 
   linear-gradient(
     180deg,
@@ -67,6 +67,10 @@ background:
     #F8F6F2 42%,
     #FCFBF9 70%,
     #FFFFFF 100%
-  );  background-position: top;
+  );  background-position: top; */
+
+  background: url(/images/gradient-top.png) no-repeat;
+
+      background-size: contain;
 
 }
