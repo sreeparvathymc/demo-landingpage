@@ -1,11 +1,9 @@
 
 
 .workflow-session{
-  position: relative; background: #F7F7F7;   padding: 0 0 100px;
-}
-
-
-
+  position: relative;
+         background: #f7f7f7;
+      }
 
 
 .workflow-session::before {
@@ -13,14 +11,13 @@
   position: absolute;
   bottom: 0;
   left: 0;
-
   width: 500px;
   height: 500px;
   background: url("/images/who_it_is_for_gradient.png") no-repeat center;
   background-position: top;
   background-size: cover;
 
-  z-index: 99;
+  z-index: 999;
   pointer-events: none;
 }
 
@@ -28,6 +25,8 @@
 .intro{
   text-align: center;
       margin-block: 130px;
+      position: relative;
+      z-index: 9;
 }
 
 .intro h2 span{display: block;}
@@ -50,28 +49,79 @@
     padding-top: 0;
 
     padding-inline: 40px;
+    position: relative;
+}
+
+
+
+.flowin1 {
+    position: relative;
+}
+
+/* .flowin1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1400px;
+
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        #f3f2ef
+    );
+
+} */
+
+
+
+.flowin2 {
+  position: relative;
 }
 
 
 
 
-.flowin2 {
-  padding-top: 200px;
-  position: relative;
-/* background:
+.flowin2{position: relative;}
+.flowin2::before{
+        content: "";
+    z-index: 9;
+    pointer-events: none;
+    background: url(/images/hero_gradient.png) top / cover no-repeat;
 
-  linear-gradient(
-    180deg,
-    #F8F2E8 0%,
-    #F4EFE8 18%,
-    #F8F6F2 42%,
-    #FCFBF9 70%,
-    #FFFFFF 100%
-  );  background-position: top; */
 
-  background: url(/images/gradient-top.png) no-repeat;
+        width: 480px;
+    height: 1029px;
+    position: absolute;
+    top: -500px;
+    right: -40px;
+}
 
-      background-size: contain;
-      background-size: 100%;
 
+
+
+
+.flowin3{
+    padding-top: 200px;
+    padding-bottom: 130px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            transparent 0%,
+            transparent 45%,
+            rgba(248,247,245,.4) 60%,
+            rgba(248,247,245,.8) 100%,
+            #f3f2ef 100%
+        ),
+        url("/images/gradient-top.png");
+
+    background-repeat: no-repeat, no-repeat;
+
+    /* gradient        image */
+    background-size: 100% 100%, 100% 90%;
+
+    /* gradient        image */
+    background-position: center, top center;
 }
